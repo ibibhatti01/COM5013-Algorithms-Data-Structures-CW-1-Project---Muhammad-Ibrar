@@ -25,7 +25,7 @@ class ContactBook:
             return False
         self._contacts_by_email[contact.email] = contact
         return True
-
+# Refining update_contact method for issue #1
     def update_contact(self, email: str, **fields) -> bool:
         """
         Update an existing contact's fields by email.
