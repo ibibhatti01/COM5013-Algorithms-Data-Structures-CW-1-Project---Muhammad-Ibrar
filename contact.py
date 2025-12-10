@@ -11,4 +11,4 @@ class Contact:
     address: str = ""
 
     def __str__(self) -> str:
-        return f"{self.name} <{self.email}> ({self.phone})"
+        return f"{self.name} <{self.email}> ({self.phone}) ({self.address})"
