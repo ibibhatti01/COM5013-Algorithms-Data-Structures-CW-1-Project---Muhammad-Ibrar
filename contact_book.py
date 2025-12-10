@@ -6,9 +6,10 @@ from algorithms import linear_search
 
 
 class ContactBook:
-    """
-    Stores contacts by email using a hash table (dict).
-    Provides methods to search and list contacts.
+    """Stores contacts using a dictionary keyed by email.
+
+    Using a hash map allows O(1) average-time lookup, insertion, and deletion.
+    This supports fast searches by unique identifiers such as email.
     """
 
     def __init__(self) -> None:
