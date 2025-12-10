@@ -5,6 +5,8 @@ from typing import List, Callable, TypeVar, Optional
 T = TypeVar("T")
 
 
+# Linear search performs a full scan of the list. 
+# Time complexity: O(n) in all cases.
 def linear_search(items: List[T], predicate: Callable[[T], bool]) -> List[T]:
     """Return all items that satisfy the predicate. O(n)."""
     matches: List[T] = []
@@ -13,7 +15,8 @@ def linear_search(items: List[T], predicate: Callable[[T], bool]) -> List[T]:
             matches.append(item)
     return matches
 
-
+# Bubble Sort repeatedly swaps adjacent elements until sorted.
+# Time complexity: O(n^2) worst and average, O(n) best case when already sorted.
 def bubble_sort(items: List[T], key: Callable[[T], object]) -> List[T]:
     """
     Simple bubble sort implementation. O(n^2).
