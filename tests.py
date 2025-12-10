@@ -33,6 +33,14 @@ def run_basic_tests() -> None:
 
     print("All basic tests passed.")
 
+def test_search_empty_book():
+    """Searching an empty ContactBook should return an empty list."""
+    from contact_book import ContactBook
+
+    book = ContactBook()
+    results = book.find_by_name("anything")
+
+    assert results == [], "Expected empty list when searching an empty contact book"
 
 if __name__ == "__main__":
     run_basic_tests()
