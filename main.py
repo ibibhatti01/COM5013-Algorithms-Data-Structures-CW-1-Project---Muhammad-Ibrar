@@ -3,15 +3,18 @@
 from contact_book import ContactBook
 from contact import Contact
 
-def print_menu() -> None:
-    print("\nContact Book Menu")
+def print_menu():
+    print("\n" + "-" * 40)
+    print("      CONTACT MANAGEMENT SYSTEM")
+    print("-" * 40)
     print("1. Add contact")
     print("2. Update contact")
     print("3. Remove contact")
-    print("4. Find by email")
-    print("5. Find by name")
-    print("6. List all contacts (sorted by name)")
+    print("4. Search by email")
+    print("5. Search by name")
+    print("6. List all contacts")
     print("0. Exit")
+    print("-" * 40)
 
 
 def main() -> None:
